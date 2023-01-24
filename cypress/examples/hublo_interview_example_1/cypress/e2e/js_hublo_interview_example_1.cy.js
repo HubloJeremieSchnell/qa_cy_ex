@@ -15,7 +15,7 @@
 
 //
 // REMINDER
-// Be sure to run `npm start` to start the server
+// Be sure to to start the server
 // before running the tests
 
 describe('is logging in', function () {

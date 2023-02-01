@@ -6,8 +6,8 @@ from selenium import webdriver
 # 1. Testing error message, if we send incorrect values, "Username and/or password is incorrect" should be visible in red.
 # 2. Testing unauthorized page, user should see "You are not logged in and cannot access this page" if he's not logged. please also log http code of /dashboard call
 # 3. Testing login, ensure input are displayed and put correct credentials, when click on login, user should be redirected to /dashboard page
-# 4. Whitout keeping previous context, connect using request cypress API
-# 5. Finally, create a command for login in and call it in a test to ensure page "Users" is accessible when connected
+# 4. Whitout keeping previous context, connect using request API
+# 5. Finally, create a function for login in and call it in a test to ensure page "Users" is accessible when connected
 # 6.a Low level Algorithm: method get_table is returning a table with 50 values between 1 and 10, please calculate the sum of numbers between or equal to 4 and 7
 # 6.b Middle level Algorithm: method get_table is returning a table with 50 values between 1 and 10, please determine if there is more 4 than 7
 # 6.c High level Algorithm: method get_table is returning a table with 50 values between 1 and 10, please create a method to define which number are present a odd number of times

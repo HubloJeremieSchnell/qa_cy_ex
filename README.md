@@ -12,6 +12,9 @@ npm install
 cd cypress/examples/hublo_interview_example_1
 npm start
 #Code and run your Cypress/Python automation
+
+Exercices are located under : qa_cy_ex/cypress/examples/hublo_interview_example_1/cypress/e2e
+
 ```
 ### Cypress 
 ```

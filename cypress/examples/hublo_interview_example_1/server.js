@@ -85,4 +85,86 @@ app.get('/unauthorized', (req, res) => {
   res.render('./unauthorized.hbs')
 })
 
+app.get('/getUsers', (req, res) => {
+  const u = [
+    {
+      'id': 1,
+      'username': 'john_doe',
+      'first_name': 'John',
+      'last_name': 'Doe',
+      'email': 'john.doe@example.com',
+      'age': 30,
+      'is_active': true,
+      'address': {
+        'street': '123 Main Street',
+        'city': 'Anytown',
+        'country': 'USA',
+      },
+      'roles': ['user', 'member'],
+    },
+    {
+      'id': 2,
+      'username': 'jane_smith',
+      'first_name': 'Jane',
+      'last_name': 'Smith',
+      'email': 'jane.smith@example.com',
+      'age': 25,
+      'is_active': true,
+      'address': {
+        'street': '456 Oak Avenue',
+        'city': 'Sometown',
+        'country': 'Canada',
+      },
+      'roles': ['user', 'admin'],
+    },
+    {
+      'id': 3,
+      'username': 'bob_jones',
+      'first_name': 'Bob',
+      'last_name': 'Jones',
+      'email': 'bob.jones@example.com',
+      'age': 35,
+      'is_active': false,
+      'address': {
+        'street': '789 Pine Street',
+        'city': 'Othertown',
+        'country': 'UK',
+      },
+      'roles': ['user'],
+    },
+    {
+      'id': 4,
+      'username': 'alice_miller',
+      'first_name': 'Alice',
+      'last_name': 'Miller',
+      'email': 'alice.miller@example.com',
+      'age': 28,
+      'is_active': true,
+      'address': {
+        'street': '101 Elm Road',
+        'city': 'Somewhere',
+        'country': 'Australia',
+      },
+      'roles': ['user', 'editor'],
+    },
+    {
+      'id': 5,
+      'username': 'sam_wilson',
+      'first_name': 'Sam',
+      'last_name': 'Wilson',
+      'email': 'sam.wilson@example.com',
+      'age': 32,
+      'is_active': true,
+      'address': {
+        'street': '222 Maple Lane',
+        'city': 'Anytown',
+        'country': 'USA',
+      },
+      'roles': ['user'],
+    },
+  ]
+
+  res.json(u)
+})
+
 app.listen(port)

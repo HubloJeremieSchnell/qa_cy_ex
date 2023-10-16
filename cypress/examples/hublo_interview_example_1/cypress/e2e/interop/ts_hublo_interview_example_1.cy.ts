@@ -8,6 +8,14 @@
 // REMINDER
 // Be sure to run `npm start` to start the server
 // before running the tests
+// 2. Test login using /loginapi with incorrect password, this should return 401 with error message
+// 3. Test login using /loginapi with correct password, this should return 200 with token`
+// 4. With the token, call /getUsers to get the list of users
+// 5. Transform the list of users to a list of emails with the format "firstname.lastname.id@domain"
+// 6. Send an array of emails to /sendEmails with this format {"emails": ["email1", "email2"]}
+// 7.a Low level Algorithm: method get_table is returning a table with 50 values between 1 and 10, please calculate the sum of numbers between or equal to 4 and 7
+// 7.b Middle level Algorithm: method get_table is returning a table with 50 values between 1 and 10, please determine if there is more 4 than 7
+// 7.c High level Algorithm: method get_table is returning a table with 50 values between 1 and 10, please create a method to define which number are present a odd number of times
 
 describe('is logging in', function () {
   // const username = 'jane.lane'

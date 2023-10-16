@@ -67,6 +67,25 @@ app.post('/login', urlencodedParser, (req, res) => {
   }
 })
 
+app.post('/loginapi', urlencodedParser, (req, res) => {
+  // if this matches the secret username and password
+  if (matchesUsernameAndPassword(req.body)) {
+    req.session.user = 'jane.lane'
+    res.json({ 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c' })
+  } else {
+    // render login with errors
+    req.session.user = null
+    res.status(401).json({ 'error': 'Username and/or password is incorrect' })
+  }
+})
+
+app.post('/sendEmails', ensureLoggedIn, (req, res) => {
+  // if this matches the secret username and password
+  if (req.body.emails) {
+    res.status(200)
+  }
+})
+
 app.get('/dashboard', ensureLoggedIn, (req, res) => {
   res.render('./dashboard.hbs', {
     user: req.session.user,

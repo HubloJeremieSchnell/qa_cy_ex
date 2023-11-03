@@ -7,6 +7,7 @@ from selenium import webdriver
 # Be sure to to start the server
 # before running the tests
 
+
 def main():
     baseUrl = "http://localhost:7077/"
     #provided chrome driver is 108 version for mac m1

@@ -15,6 +15,9 @@ from selenium import webdriver
 # 7.b Middle level Algorithm: method get_table is returning a table with 50 values between 1 and 10, please determine if there is more 4 than 7
 # 7.c High level Algorithm: method get_table is returning a table with 50 values between 1 and 10, please create a method to define which number are present a odd number of times
 
+# const username = 'jane.lane'
+# const password = 'password123'
+
 def main():
     baseUrl = "http://localhost:7077/"
     #provided chrome driver is 108 version for mac m1

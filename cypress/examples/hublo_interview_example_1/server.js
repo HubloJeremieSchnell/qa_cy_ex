@@ -79,6 +79,10 @@ app.post('/loginapi', urlencodedParser, (req, res) => {
   }
 })
 
+app.get('/loginapi', urlencodedParser, (req, res) => {
+  res.status(401).json({ 'error': 'Skill test request is a POST method' })
+})
+
 app.post('/sendEmails', ensureLoggedIn, (req, res) => {
   // if this matches the secret username and password
   if (req.body.emails) {

@@ -9,7 +9,7 @@ Welcome to our technical interview process. Please find below informations on ho
 cd qa_cy_ex
 cd cypress
 npm install
-cd cypress/examples/hublo_interview_example_1
+cd examples/hublo_interview_example_1
 npm start
 #Code and run your Cypress/Python automation
 

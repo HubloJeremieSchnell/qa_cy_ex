@@ -1,0 +1,8 @@
+{
+  "name": "playwright-interview",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "playwright:open": "npx playwright test --ui"
+  }
+}

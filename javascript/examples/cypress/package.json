@@ -1,5 +1,5 @@
 {
-  "name": "logging-in-html-web-form",
+  "name": "cypress-interview",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -9,7 +9,6 @@
     "cypress:run:firefox": "../../node_modules/.bin/cypress run --browser firefox",
     "cypress:run:record": "../../node_modules/.bin/cypress run --record",
     "dev": "../../node_modules/.bin/start-test 7077 cypress:open",
-    "start": "node server.js --port 7077",
     "test:ci": "../../node_modules/.bin/start-test 7077 cypress:run",
     "test:ci:chrome": "../../node_modules/.bin/start-test 7077 cypress:run:chrome",
     "test:ci:firefox": "../../node_modules/.bin/start-test 7077 cypress:run:firefox",

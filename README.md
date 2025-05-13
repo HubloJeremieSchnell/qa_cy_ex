@@ -2,25 +2,42 @@
 
 ## Welcome ! 
 
-Welcome to our technical interview process. Please find below informations on how to launch test application. 
+Welcome to our technical interview process. Please find below information on how to launch the test application. 
 
 ```
 # git clone https://github.com/HubloJeremieSchnell/qa_cy_ex.git
 cd qa_cy_ex
-cd cypress
-npm install
-cd examples/hublo_interview_example_1
-npm start
-#Code and run your Cypress/Python automation
 
-Exercices are located under : qa_cy_ex/cypress/examples/hublo_interview_example_1/cypress/e2e
+cd javascript
+npm install
+cd server
+npm start
+
+#Code and run your Cypress/Playwright/Python automation
 
 ```
 ### Cypress 
+
+You can edit the javascript or typescript file located in `javascript/examples/cypress/e2e/behavior/` to add your tests.
+
+Then you can run the tests with the commands below: 
+
 ```
 # In another termincal
-cd cd qa_cy_ex/cypress/examples/hublo_interview_example_1
+cd qa_cy_ex/javascript/examples/cypress/
 npm run cypress:open
+```
+
+### Playwright 
+
+You can edit the javascript or typescript file located in `javascript/examples/playwright/e2e/` to add your tests.
+
+Then you can run the tests with the commands below: 
+
+```
+# In another termincal
+cd qa_cy_ex/javascript/examples/playwright/
+npm run playwright:open
 ```
 
 ### Python 
